@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pymongo~=4.11
+python-dotenv~=1.0.1
+requests
+pytest
+httpx
+pydantic~=2.10.6

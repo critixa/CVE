@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVE Detail</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="detail.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="cve-id">CVE Detail</h1>
+
+        <!-- Description Section -->
+        <h2>Description:</h2>
+        <p id="description"></p>
+
+        <!-- CVSS V2 Metrics Section -->
+        <h2>CVSS V2 Metrics:</h2>
+        <p><strong>Severity:</strong> <span id="severity"></span></p>
+        <p><strong>Score:</strong> <span id="score"></span></p>
+        <p><strong>Vector String:</strong> <span id="vectorString"></span></p>
+
+        <!-- Access Information Table -->
+        <h2>Access Information:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Access Vector</th>
+                    <th>Access Complexity</th>
+                    <th>Authentication</th>
+                    <th>Confidentiality Impact</th>
+                    <th>Integrity Impact</th>
+                    <th>Availability Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="accessVector"></td>
+                    <td id="accessComplexity"></td>
+                    <td id="authentication"></td>
+                    <td id="confidentialityImpact"></td>
+                    <td id="integrityImpact"></td>
+                    <td id="availabilityImpact"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Scores Section -->
+        <h2>Scores:</h2>
+        <p><strong>Exploitability Score:</strong> <span id="exploitabilityScore"></span></p>
+        <p><strong>Impact Score:</strong> <span id="impactScore"></span></p>
+
+        <!-- CPE Table -->
+        <h2>CPE Information:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Match Criteria ID</th>
+                    <th>Vulnerable</th>
+                </tr>
+            </thead>
+            <tbody id="cpe-table-body">
+                <!-- CPE data will be inserted here dynamically -->
+            </tbody>
+        </table>
+
+        <a href="index.html">Back to CVE List</a>
+    </div>
+</body>
+</html>

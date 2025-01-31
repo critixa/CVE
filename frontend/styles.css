@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1000px;
+}
+
+h1, h2 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Description Section */
+#description {
+  display: block;
+  font-size: 16px;
+  color: #444;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+/* CVSS V2 Metrics Section */
+.metrics-section {
+  margin-top: 20px;
+}
+
+.metrics-section p {
+  font-size: 16px;
+  margin: 5px 0;
+  padding-left: 10px;
+  color: #333;
+}
+
+/* Access Information Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Scores Section */
+.scores-section p {
+  font-size: 16px;
+  margin: 5px 0;
+  padding-left: 10px;
+  color: #333;
+}
+
+/* CPE Table */
+#cpe-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#cpe-table th, #cpe-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#cpe-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Back Link */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .metrics-section p, .scores-section p {
+    font-size: 14px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
