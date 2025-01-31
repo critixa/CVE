@@ -48,6 +48,9 @@ The CVE Management System is a web application that allows users to fetch, searc
 ## API Endpoints
 - **GET /api/cves**: Retrieves a list of CVEs.
 - **GET /api/cve/{id}**: Retrieves detailed information about a specific CVE.
+- If running locally, access API at:
+🔗 Base URL: http://127.0.0.1:8000
+🔗 Swagger UI: http://127.0.0.1:8000/docs
 
 ## Future Improvements
 - Implement log rotation for better error management.
